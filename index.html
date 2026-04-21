@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Directory</title>
+    <title>Employee Directory | Altimus 15th & 16th</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <h1>Employee Directory</h1>
-        <p>Search for an employee by name to find their information.</p>
+        <p>Search by name or department to find work stations and extensions.</p>
     </header>
 
-    <main>
+    <main id="directory-app">
         <div class="search-container">
-            <label for="search-input">Employee Name:</label>
-            <input type="text" id="search-input" placeholder="Type a name...">
+            <label for="search-input">Search:</label>
+            <input type="text" id="search-input" placeholder="Type a name or department (e.g., IT)...">
         </div>
 
         <div id="results-container">
-            </div>
+            <p class="loading">Loading directory...</p>
+        </div>
     </main>
 
     <script src="script.js"></script>
