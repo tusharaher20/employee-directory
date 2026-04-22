@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Directory | Altimus 15th & 16th</title>
+    <title>Altimus | Employee Directory</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <div class="top-accent"></div>
+
     <header>
-        <h1>Employee Directory</h1>
-        <p>Search by name or department to find work stations and extensions.</p>
+        <div class="header-content">
+            <h1>Altimus <span>Directory</span></h1>
+            <p>15th & 16th Floor Real-time Lookup</p>
+        </div>
     </header>
 
-    <main id="directory-app">
-        <div class="search-container">
-            <label for="search-input">Search:</label>
-            <input type="text" id="search-input" placeholder="Type a name or department (e.g., IT)...">
+    <main>
+        <div class="search-wrapper">
+            <div class="search-container">
+                <svg class="search-icon" viewBox="0 0 24 24" width="20" height="20"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="currentColor"/></svg>
+                <input type="text" id="search-input" placeholder="Search by name, department, or station...">
+            </div>
         </div>
 
-        <div id="results-container">
-            <p class="loading">Loading directory...</p>
+        <div id="results-container" class="results-grid">
+            <div class="loading-shimmer">
+                <div class="shimmer-card"></div>
+                <div class="shimmer-card"></div>
+                <div class="shimmer-card"></div>
+            </div>
         </div>
     </main>
 
